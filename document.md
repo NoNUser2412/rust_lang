@@ -24,15 +24,19 @@ REP(i,1,n) {
 cout << SQ(3+3) << "\n";
 ```
 ## 3. Mathematics
+
 ![img.png](img.png)
 - Cấp số cộng:
 
 ![img_1.png](img_1.png)
 - Cấp số nhân:
+
 ![img_2.png](img_2.png)
 - Công thức Binet tính số Fibonacci thứ n:
+
 ![img_3.png](img_3.png)
 - Phân tích 1 số ra thừa số nguyên tố
+
 ![img_11.png](img_11.png)
 ```C
 vector<int> factors(int n) {
@@ -48,10 +52,13 @@ vector<int> factors(int n) {
 }
 ```
 - Số lượng các thừa số của một số
+
 ![img_10.png](img_10.png)
 - Tổng các thừa số của một số
+
 ![img_12.png](img_12.png)
 - Tích các thừa số của một số
+
 ![img_13.png](img_13.png)
 - Sàng Eratosthenes
 ```C
@@ -63,6 +70,7 @@ for (int x = 2; x <= n; x++) {
 }
 ```
 - Thuật chia Euclid:
+
 ![img_14.png](img_14.png)
 ```C
 int gcd(int a, int b) {
@@ -71,8 +79,10 @@ int gcd(int a, int b) {
 }
 ```
 - Số các số nguyên tố cùng nhau từ 1 đến n
+
 ![img_16.png](img_16.png)
 - Phép chia modulo của số mũ
+
 ![img_17.png](img_17.png)
 ```C
 int modpow(int x, int n, int m) {
@@ -84,13 +94,16 @@ int modpow(int x, int n, int m) {
 }
 ```
 - Công thức Euclid cho bộ ba số Pytago
+
 ![img_18.png](img_18.png)
 - Công thức Wilson: số n là số nguyên tố khi:
+
 ![img_19.png](img_19.png)
 - Tổ hợp
+
 ![img_20.png](img_20.png)
-- 
 ## 4. Độ phức tạp thời gian yêu cầu đối với các đầu vào khác nhau:
+
 ![img_4.png](img_4.png)
 ## 5. Sắp xếp:
 ```C++
@@ -149,11 +162,13 @@ q.pop();
 q.front();
 ```
 ## 12. Dynamic Programming (Memoization)
-Segment Tree
+## Segment Tree
+
 ![img_5.png](img_5.png)
 # III. Graph:
 ## Adjacent List:
 - Đồ thị không có trọng số:
+
 ![img_6.png](img_6.png)
 ```C
 vector<int> adj[N]
@@ -165,6 +180,7 @@ adj[3].push_back(4);
 adj[4].push_back(1);
 ```
 - Đồ thị có trọng số:
+
 ![img_7.png](img_7.png)
 ```C
 vector<pair<int,int>> adj[N];
@@ -181,6 +197,7 @@ for (auto u : adj[s]) {
 }
 ```
 ## Adjacent Matrix
+
 ![img_8.png](img_8.png) ![img_9.png](img_9.png)
 ```C
 int adj[N][N];
@@ -239,7 +256,7 @@ while (!q.empty()) {
 ```
 ## Shortest Distance:
 - Bellman–Ford algorithm
-```
+```C
 for (int i = 1; i <= n; i++) distance[i] = INF;
 distance[x] = 0;
 for (int i = 1; i <= n-1; i++) {
@@ -302,13 +319,17 @@ void dfs(int s, int e) {
 dfs(x, 0);
 ```
 ## String Hashing
+
 ![img_21.png](img_21.png)
 - Chọn B = 1e9
+
 ![img_22.png](img_22.png)
 ## Geometry
 - Công thức Heron
+
 ![img_23.png](img_23.png)
 - Diện tích của hình đi qua 4 điểm
+
 ![img_24.png](img_24.png)
 - Số phức
 ```C
@@ -327,6 +348,6 @@ v *= polar(1.0,0.5);
 cout << arg(v) << "\n"; // 0.963648
 ```
 - Diện tích đa giác
+
 ![img_25.png](img_25.png)
 ![img_26.png](img_26.png)
-- 
